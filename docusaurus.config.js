@@ -4,15 +4,16 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Tayler and Mikey\'s House',
+  tagline: 'Everything you need for taking care of our pets',
   url: 'https://docu-taylerandmikey.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'mikikiv', 
-  projectName: 'docu-taylerandmikey', 
+  projectName: 'docu-taylerandmikey',
+  noIndex: true, 
 
   presets: [
     [
@@ -34,6 +35,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       }),
     ],
   ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'sp'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      fr: {
+        label: 'Spanish',
+        direction: 'ltr',
+      },
+    },
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

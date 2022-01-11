@@ -14,12 +14,12 @@ Each pet requires **food/water**. Feeding is easy!
 | ------------: | ------------- | ----------------- | ----------------- |
 | **Amount**    | Self feeding  | 4 cups per day    | 3 cups per day    |
 | **Frequency** | Self feeding  | Morning and evening | Morning and evening |
-| **Quirks**    | Food is in the bathroom. | Eats while laying down. Paws food bowl for food. | Sneaks food from CJ's bowl. Also tries to sneak cat poops.[^1] Generally looks uncomfortable while eating. Will eat from puzzles too.| 
-| **Treats**    |Only eats treats from a flat surface|Treats as needed and for fun|Treats as needed and for fun.[^2] |
+| **Quirks**    | Food is in the bathroom. | Eats while laying down. Paws food bowl for food. | Sneaks food from CJ's bowl. Also tries to sneak cat poops. Generally looks uncomfortable while eating. Will eat from puzzles too.| 
+| **Treats**    |Only eats treats from a flat surface|Treats as needed and for fun|Treats as needed and for fun. |
 | **Allergies** | None | None | None |
 
-[^1]:See [bathroom](/docs/bathroom#litterbox)
-[^2]:Will howl for treats!
+:See [bathroom](/docs/bathroom#litterbox)
+:Will howl for treats!
 
 
 :::tip 

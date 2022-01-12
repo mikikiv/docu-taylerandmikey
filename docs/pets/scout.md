@@ -3,7 +3,7 @@ sidebar_label: Pet food and medicine
 sidebar_position: 1
 ---
 
-# Food and Medicine
+# litterbox Food and Medicine
 
 Each pet requires **food/water**. Feeding is easy!
 

@@ -14,7 +14,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   organizationName: 'mikikiv', 
   projectName: 'docu-taylerandmikey',
   noIndex: true, 
-
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+      },
+    ],
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',

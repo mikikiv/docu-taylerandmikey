@@ -7,7 +7,7 @@ sidebar_position: 4
 
 We have all sorts of stuff connected to internet in the house!
 
-## Internet
+## Internet / Wifi
 
 [![Connect to the wifi](https://chart.googleapis.com/chart?cht=qr&chl=WIFI%3AT%3AWPA%3BS%3Anetworknotfound%3BP%3Acjtetonscout16%3BH%3A%3B&chs=180x180&choe=UTF-8&chld=L|2)](wifi://:cjtetonscout16@networknotfound)
 

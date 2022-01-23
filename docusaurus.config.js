@@ -13,6 +13,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   favicon: 'img/favicon.ico',
   organizationName: 'mikikiv', 
   projectName: 'docu-taylerandmikey',
+  // because of the nature of this website, we intentionally don't want it to be indexed any any search engines 
   noIndex: true, 
   plugins: [
     [
@@ -29,7 +30,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/mikikiv/docu-taylerandmikey',
+          editUrl: 'https://github.com/mikikiv/docu-taylerandmikey/tree/main',          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
+          editCurrentVersion: true,
         },
         blog: {
           showReadingTime: true,
@@ -73,19 +76,23 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: 'House',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
           },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Guide',
             items: [
               {
                 label: 'House',
@@ -94,31 +101,35 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     },
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discordapp.com/invite/docusaurus',
+          //     },
+          //     {
+          //       label: 'Twitter',
+          //       href: 'https://twitter.com/docusaurus',
+          //     },
+          //   ],
           },
           {
-            title: 'More',
+            title: 'About this site',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Hosted on Netlify',
+                href: 'https://www.netlify.com/',
               },
               {
-                label: 'GitHub',
+                label: 'Built on Github',
+                href: 'https://github.com/mikikiv/docu-taylerandmikey',
+              },
+              {
+                label: 'Built with Docusaurus',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],

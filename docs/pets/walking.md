@@ -1,5 +1,5 @@
 ---
-sidebar_label: Routine
+sidebar_label: Walking
 sidebar_position: 2
 ---
 

@@ -1,6 +1,7 @@
 ---
 sidebar_label: Pet food and medicine
 sidebar_position: 1
+slug: food
 ---
 
 # Food and Medicine

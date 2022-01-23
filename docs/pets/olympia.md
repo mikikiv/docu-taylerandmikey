@@ -1,11 +1,11 @@
 ---
-sidebar_label: About Scout
-sidebar_position: 5
+sidebar_label: About Olympia
+sidebar_position: 4
 tags:
- - Scout
+ - Olympia
 ---
 
-# Scout
+# Olympia
 
 Scout is our little princess cat. She is very social, but very shy around dogs, especially around dogs that she doesn't live with. 
 

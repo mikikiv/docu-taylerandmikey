@@ -1,6 +1,6 @@
 {
   "name": "docu-taylerandmikey",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -14,11 +14,13 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
+    "@cmfcmf/docusaurus-search-local": "^0.9.2",
     "@docusaurus/core": "2.0.0-beta.6",
     "@docusaurus/preset-classic": "2.0.0-beta.6",
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
+    "docusaurus": "^1.14.7",
     "file-loader": "^6.2.0",
     "node": "^17.3.0",
     "prism-react-renderer": "^1.2.1",
@@ -46,5 +48,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikikiv/docu-taylerandmikey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikikiv/docu-taylerandmikey/issues"
+  },
+  "homepage": "https://github.com/mikikiv/docu-taylerandmikey#readme",
+  "devDependencies": {
+    "coffee-script": "^1.12.7"
+  }
 }

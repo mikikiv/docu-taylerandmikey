@@ -4,16 +4,25 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Tayler and Mikey\'s House',
+  tagline: 'Everything you need for taking care of our pets',
   url: 'https://docu-taylerandmikey.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'mikikiv', 
-  projectName: 'docu-taylerandmikey', 
-
+  projectName: 'docu-taylerandmikey',
+  // because of the nature of this website, we intentionally don't want it to be indexed any any search engines 
+  noIndex: true, 
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+      },
+    ],
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -21,7 +30,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/mikikiv/docu-taylerandmikey',
+          editUrl: 'https://github.com/mikikiv/docu-taylerandmikey/tree/main',          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
+          editCurrentVersion: true,
         },
         blog: {
           showReadingTime: true,
@@ -34,14 +45,28 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       }),
     ],
   ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'sp'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      fr: {
+        label: 'Spanish',
+        direction: 'ltr',
+      },
+    },
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Scouts House',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Scouts House',
           src: 'img/logo.svg',
         },
         items: [
@@ -49,54 +74,62 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'House',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
           },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Guide',
             items: [
               {
-                label: 'Tutorial',
+                label: 'House',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     },
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discordapp.com/invite/docusaurus',
+          //     },
+          //     {
+          //       label: 'Twitter',
+          //       href: 'https://twitter.com/docusaurus',
+          //     },
+          //   ],
           },
           {
-            title: 'More',
+            title: 'About this site',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Hosted on Netlify',
+                href: 'https://www.netlify.com/',
               },
               {
-                label: 'GitHub',
+                label: 'Built on Github',
+                href: 'https://github.com/mikikiv/docu-taylerandmikey',
+              },
+              {
+                label: 'Built with Docusaurus',
                 href: 'https://github.com/facebook/docusaurus',
               },
             ],

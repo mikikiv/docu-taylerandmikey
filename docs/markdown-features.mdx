@@ -1,10 +1,15 @@
 ---
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 # Markdown Features
 
 Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+
+* [Another markdown guide!](https://www.markdownguide.org/hacks/) 
+* :brain:[Need some emojis?](https://infinitbility.com/markdown-emoji-example-with-code):rocket:
+* Docusaurus is built on [MDX V1](https://mdxjs.com/guides/)
+
 
 ## Front Matter
 
@@ -29,15 +34,6 @@ Markdown text with [links](./hello.md)
 
 Regular Markdown links are supported, using url paths or relative file paths.
 
-```md
-Let's see how to [Create a page](/create-a-page).
-```
-
-```md
-Let's see how to [Create a page](./create-a-page.md).
-```
-
-**Result:** Let's see how to [Create a page](./create-a-page.md).
 
 ## Images
 
@@ -73,25 +69,31 @@ function HelloDocusaurus() {
 
 Docusaurus has a special syntax to create admonitions and callouts:
 
-    :::tip My tip
-
-    Use this awesome feature option
-
-    :::
-
-    :::danger Take care
-
-    This action is dangerous
-
-    :::
-
-:::tip My tip
+:::tip "tip" My tip
 
 Use this awesome feature option
 
 :::
 
-:::danger Take care
+:::note "note" Take care
+
+This action is dangerous
+
+:::
+
+:::caution "caution" Take care
+
+This action is dangerous
+
+:::
+
+:::important "important" Take care
+
+This action is dangerous
+
+:::
+
+:::danger "danger" Take care
 
 This action is dangerous
 

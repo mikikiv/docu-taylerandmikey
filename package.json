@@ -57,6 +57,7 @@
   },
   "homepage": "https://github.com/mikikiv/docu-taylerandmikey#readme",
   "devDependencies": {
-    "coffee-script": "^1.12.7"
+    "coffee-script": "^1.12.7",
+    "netlify-cli": "^8.13.0"
   }
 }

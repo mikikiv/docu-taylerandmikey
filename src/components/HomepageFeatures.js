@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'CJ',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    src: require('../../static/img/square_cj.jpg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Olympia',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    src: require('../../static/img/wide_olympia.jpg').default,
     description: (
       <>
         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Scout',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    src: require('../../static/img/scout.jpg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -35,11 +35,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({src, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        <img src={src} alt={title} className={styles.featureSvg} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

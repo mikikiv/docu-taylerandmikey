@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'CJ',
-    src: require('../../static/img/square_cj.jpg').default,
+    src: require('../../static/img/square_CJ.jpg').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Scout',
-    src: require('../../static/img/scout.jpg').default,
+    src: require('../../static/img/Scout.jpg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
